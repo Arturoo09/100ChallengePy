@@ -11,10 +11,10 @@ def clear_screen():
         os.system("clear")
 
 def deal_card():
-  """Returns a random card from the deck."""
-  cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-  card = random.choice(cards)
-  return card
+    """Returns a random card from the deck."""
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    card = random.choice(cards)
+    return card
 
 def calculate_score(cards):
     if sum(cards) == 21 and len(cards) == 2:
@@ -46,7 +46,7 @@ def compare(user_score, computer_score):
         return "You lose 😤"
     
 def play_game():
-    print(f"logo\n")
+    print(f"{logo}\n")
     
     user_cards = []
     computer_cards = []
@@ -75,12 +75,14 @@ def play_game():
     while computer_score != 0 and computer_score < 17:
         computer_cards.append(deal_card())
         computer_score = calculate_score(computer_cards)
-
+    
+    print("\n")
     print(f"   Your final hand: {user_cards}, final score: {user_score}")
     print(f"   Computer's final hand: {computer_cards}, final score: {computer_score}")
-    print(compare(user_score, computer_score))
+    print(f"   {compare(user_score, computer_score)}")
+    print("\n")
     
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-  clear_screen()
-  play_game()
+    clear_screen()
+    play_game()
 
