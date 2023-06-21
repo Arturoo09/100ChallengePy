@@ -1,4 +1,4 @@
-# 100 Days of Code in Python Challenge
+# 100 Days of Code Challenge in Python 
 
 1. BandNameGenerator 
 2. TipCalculator
