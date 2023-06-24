@@ -16,7 +16,7 @@
 14. HigherOrLower
 15. CoffeeMachine
 16. CoffeeMachineOOP
-17. 
+17. QuizProject
 18. 
 19.
 20.  
