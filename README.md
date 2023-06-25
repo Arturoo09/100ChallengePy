@@ -18,5 +18,7 @@
 16. CoffeeMachineOOP
 17. QuizProject
 18. TheHirstPainting
-19.
-20.  
+19. TurtleRace && TurtleSketchApp 
+20. Snake I
+21. Snake II
+22. Pong
